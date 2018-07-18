@@ -65,7 +65,7 @@ export default {
   methods: {
     async getShare() {
       let id = this.$route.query.agent_id;
-      let res = await this.api.getShare({ id : id  });
+      let res = await this.api.getShare({ id: id });
       if (res.code == 200) {
         this.submitForm = res.data;
       }
