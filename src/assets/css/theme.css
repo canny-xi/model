@@ -1,0 +1,339 @@
+/*button*/
+.el-button--primary{
+  border: transparent;
+  background: #0ACD79;
+
+}
+.el-button--primary:hover{
+  transition: all ease .5s;
+  background: #0ACD79;
+  opacity: .8;
+}
+
+.el-button--default:hover{
+  background: transparent;
+  border-color: transparent;
+}
+.el-button--default:hover span{
+  color: #999;
+}
+
+
+.el-button{
+  border-radius: 100px;
+  /*padding:8px 30px;*/
+}
+.login .el-input{
+  border-radius: 5px;
+}
+.login .el-button{
+  margin-top: 30px;
+  padding:8px 30px;
+  transition: none !important;
+}
+.page-container{
+  margin-left: 250px;
+}
+/*tabs*/
+.el-tabs__item.is-active{
+  color: #333;
+}
+.el-tabs__active-bar{
+  box-sizing:border-box;
+  border-radius: 100px;
+  /* padding: 0 13%; */
+  background-clip:content-box;
+}
+.el-tabs__header{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #EDEEEF;
+}
+.el-tabs__item{
+  color: #ccc;
+}
+/*select*/
+.el-select .el-input .el-input__icon{
+  color: #ccc;
+}
+/*label*/
+.el-form-item__label{
+  color: #666;
+}
+/*input*/
+.el-input__icon{
+  color: #ccc;
+}
+.el-input__inner,.el-textarea__inner{
+  border: 1px solid #EDEEEF;
+  color: #666;
+  background-color: rgba(250, 250, 250, .6);
+}
+.el-input__inner:foucs,.el-input__inner:blur,.el-input__inner:active{
+  border:1px solid #666;
+}
+.el-input__inner:hover,.el-textarea__inner:hover{
+  border-color: #666;
+  color: #666;
+}
+.el-input__inner::-webkit-input-placeholder,.el-textarea__inner::-webkit-input-placeholder {
+  color: #ccc;
+}
+.el-input__inner:-ms-input-placeholder,.el-textarea__inner:-ms-input-placeholder {
+  color: #ccc;
+}
+.el-input__inner::placeholder,.el-textarea__inner::placeholder {
+  color: #ccc;
+}
+.login-form .el-input__inner{
+  background: rgba(187, 187, 187, 0.4) !important;
+  color: #fff;
+  border-color: transparent;
+}
+/*table*/
+.el-table{
+  border: 0px;
+}
+.el-table::after{
+  background: transparent;
+}
+.el-table th.is-leaf{
+  background: rgba(202, 204, 208, 0.1);
+}
+.el-table th.is-leaf, .el-table td,.el-table th.is-leaf, .el-table td{
+  border-color: #F4F4F4;
+}
+.el-table__header-wrapper thead div, .el-table__footer-wrapper thead div{
+  background: transparent;
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+}
+.el-table--enable-row-transition .el-table__body td .el-button {
+  padding: 0px;
+}
+
+.el-table .el-table__empty-text{
+  color:#333;
+}
+/*bottom*/
+.el-button--default{
+  border-color: transparent;
+}
+
+/*dialog*/
+.el-dialog__header{
+  position: relative;
+  margin-bottom: 20px;
+}
+.el-dialog__body{
+  position: relative;
+}
+.el-dialog__header:before{
+  box-sizing:border-box;
+  content: ' ';
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+  display: block;
+  padding:0 20px;
+  height: 1px;
+  width: 100%;
+  background:#ccc;
+  background-clip:content-box;
+}
+.el-dialog__body:before{
+  box-sizing:border-box;
+  content: ' ';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  padding:0 20px;
+  height: 1px;
+  width: 100%;
+  background:#ccc;
+  background-clip:content-box;
+}
+/*others*/
+.search-input{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.el-pagination{
+  display: inline-block;
+}
+/*pagination*/
+.page-block{
+  position: absolute;
+  /* margin-top: 30px; */
+  /* text-align: right; */
+  bottom: 42px;
+  right: 40px;
+
+}
+.page-block .totalPage{
+  position: relative;
+  color: #8A8989;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-right: 10px;
+  line-height: 36px;
+  top:8px;
+}
+
+.page-block .el-pagination{
+  height: 36px;
+}
+
+.page-block .el-pagination span, .el-pagination button {
+  height: 36px;
+  width: 36px;
+}
+
+.page-block .el-pagination .btn-prev, .el-pagination .btn-next{
+  border: 1px solid #F4F4F4;
+  border-radius: 4px;
+  color: #8A8989;
+}
+
+.page-block .el-pagination .btn-prev.disabled, .el-pagination .btn-next.disabled{
+  color: #e4e4e4;
+}
+
+.page-block .el-pager li {
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  border-radius: 4px;
+  margin-right:4px;
+  border: 1px solid #F4F4F4;
+  color:#8A8989;
+}
+
+.el-pager li.active + li{
+  border-left: 1px solid #F4F4F4;
+  padding-left:0;
+}
+
+.page-block .el-pager li.active{
+  color: #fff;
+} 
+
+.page-block .el-pager li:first-child {
+  margin-left:4px;
+}
+
+
+.operation-block{
+  display: inline-block;
+  padding-right: 20px;
+  font-size:0;
+}
+
+/*upload*/
+.el-upload-list{
+  text-align: left;
+}
+/*tags*/
+.el-tag{
+  border-radius: 100px;
+}
+.siderbar .el-menu-item [class^="icon-"] {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  margin-right: 33px;
+  background-size: cover;
+  vertical-align: middle;
+}
+.scroll{
+  min-width:1440px;
+  /* overflow-y:scroll; */
+}
+
+/* .scroll::-webkit-scrollbar{width:0px} */
+
+.el-message{
+  z-index:99999!important;
+}
+
+.el-popover {
+  border:none;
+  background: #FFFFFF;
+  box-shadow: 0 4px 12px 0 rgba(216,216,216,0.40);
+  border-radius: 4px;
+}
+
+.el-tag{
+  height:auto;
+  line-height: 1;
+  padding:4px 9px; 
+  font-size:12px;
+}
+
+.el-select-dropdown{
+  border: 1px solid #e2e2e2;
+}
+
+.el-select-dropdown .el-select-dropdown__item{
+      color:#333;
+}
+.el-select-dropdown__item.selected{color:#fff}
+
+.el-select-dropdown__item.hover{background-color: #F4FDF9}
+
+.el-dropdown-menu{
+  border-color: #F4FDF9;
+}
+
+.el-dropdown-menu__item:not(.is-disabled):hover{
+  background-color: #F4FDF9;
+}
+
+.el-date-picker {color:#333;}
+.el-date-picker .el-year-table td .cell{color:#333;}
+.el-date-picker .el-month-table td .cell{color:#333;}
+
+.el-input.is-disabled .el-input__inner::-webkit-input-placeholder {color:#ccc}
+.el-input.is-disabled .el-input__inner:-ms-input-placeholder      {color:#ccc}
+.el-input.is-disabled .el-input__inner:-moz-placeholder           {color:#ccc}
+.el-input.is-disabled .el-input__inner::-moz-placeholder          {color:#ccc}
+
+
+.icon-user  {background: url(../images/icon_user.png) no-repeat center; }
+.icon-employee  {background: url(../images/icon_employee.png) no-repeat  center;}
+.icon-msg  {background: url(../images/icon_msg.png) no-repeat top center;}
+.icon-template  {background: url(../images/icon_template.png) no-repeat  center;}
+.icon-enterprise  {background: url(../images/icon_enterprise.png) no-repeat  center;}
+.icon-health  {background: url(../images/icon_health.png) no-repeat  center;}
+.icon-system  {background: url(../images/icon_sytem.png) no-repeat center;}
+.icon-venue  {background: url(../images/icon_venue.png) no-repeat center;}
+.icon-appoint  {background: url(../images/icon_appoint.png) no-repeat center;}
+.icon-diet  {background: url(../images/icon_diet.png) no-repeat center;}
+
+.is-active .icon-user  {background: url(../images/icon_user_active.png) no-repeat top center;}
+.is-active .icon-employee  {background: url(../images/icon_employee_active.png) no-repeat top center;}
+.is-active .icon-msg  {background: url(../images/icon_msg_active.png) no-repeat top center;}
+.is-active .icon-template  {background: url(../images/icon_template_active.png) no-repeat top center;}
+.is-active .icon-enterprise  {background: url(../images/icon_enterprise_active.png) no-repeat top center;}
+.is-active .icon-health  {background: url(../images/icon_health_active.png) no-repeat top center;}
+.is-active .icon-system  {background: url(../images/icon_system_active.png) no-repeat top center;}
+.is-active .icon-venue  {background: url(../images/icon_venue_active.png) no-repeat center;}
+.is-active .icon-appoint  {background: url(../images/icon_appoint_active.png) no-repeat center;}
+.is-active .icon-diet  {background: url(../images/icon_diet_active.png) no-repeat center;}
+
+.icon-appoint-view {background: url(../images/appoint_view.png) no-repeat center;}
+.icon-appoint-view.active{background: url(../images/appoint_view_active.png) no-repeat center;}
+.icon-appoint-list{background: url(../images/appoint_list.png) no-repeat center;}
+.icon-appoint-list.active{background: url(../images/appoint_list_active.png) no-repeat center;}
+
+.position-icon{
+  background: url(../images/location.png) no-repeat;
+  background-size: 11.5px 12px;
+}
+
+.close-icon {
+  background: url(../images/close.png) no-repeat;
+  background-size: 16px 15px;
+}
