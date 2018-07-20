@@ -71,6 +71,8 @@ export default {
       }
     },
     getYearLimit(create_time_str) {
+      if (!this.submitForm.create_time) return;
+      
       let dateStr = create_time_str.split(" ")[0];
       let dateArr = dateStr.split("-");
       let create_time = new Date(dateArr[0], dateArr[1] - 1, dateArr[2]);
