@@ -4,8 +4,8 @@ import Vue from 'vue'
 //请求带上cookie
 // http.defaults.withCredentials = true;
 
-let base = 'http://120.78.69.178:2902/';
-Vue.prototype.base = 'http://120.78.69.178:2902/';    //正式服地址
+let base = 'http://47.107.246.94/';
+Vue.prototype.base = 'http://47.107.246.94/';    //正式服地址
 
 // let base = 'http://120.27.21.136:2798/';
 // Vue.prototype.base = 'http://120.27.21.136:2798/';  //测试服地址
