@@ -6,7 +6,7 @@
       <div class='title' :class="submitForm.sex==1||submitForm.sex==0? 'male' : 'female' ">
         <div class='background-image'>
           <div class='title-block'>
-            <div class='img' v-if='submitForm.head_img' :style="{backgroundImage: 'url(' + base+submitForm.head_img +')'}"></div>
+            <div class='img' v-if='submitForm.head_img' :style="{backgroundImage: 'url(' + (submitForm.head_img.indexOf('https://')!=-1?'':base)+submitForm.head_img +')'}"></div>
             <div class='img' v-else :style="{backgroundImage: 'url(' + defaultAvatar + ')'}"></div>
           </div>
           <div class='background'>
