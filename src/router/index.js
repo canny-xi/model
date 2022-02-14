@@ -1,19 +1,26 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from '@/page/Login'
 
+Vue.use(Router)
 
-
-Vue.use(Router);
-
-export default new Router({
-  // base: '/admin/company/',
+const router = new Router({
   routes: [
-    {
-      path: '/',
-      name: 'login',
-      component: Login
-    },
-
+    { path: '/login', meta: { title: 'title' }, component: () => import('../page/login') },
+ 
+   
   ]
 })
+
+router.beforeEach((to, form, next) => {
+  if (to.meta.title) {
+    document.title = to.meta.title
+  }
+  next()
+})
+// const router = new Router({
+//   mode: Config.hash ? 'hash' : 'history',
+//   routes: Routes.activity
+// })
+
+export default router
+
